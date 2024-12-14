@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>GoogleO</title>
@@ -10,11 +10,57 @@
             <h1>GoogleO</h1>
             <input type="text" name="q"><br><br>
             <input type="submit" value="Google Search"> 
-        </form>
+        </form> -->
 <!-- the action attribute on the form told the browser that when the form is submitted, 
  the data should be sent to https://www.google.com/search. 
  And by adding an input field to the form whose name attribute was q, 
  whatever the user types into that input field is included as a GET parameter in the URL.-->
-        </div>
+        <!-- </div>
     </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Google Logo -->
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        </div>
+
+        <!-- Search Bar -->
+        <form action="https://www.google.com/search" method="GET" class="search-form">
+            <div class="search-bar">
+                <input type="text" name="q" class="search-input" placeholder="Search Google or type a URL">
+            </div>
+            
+            <!-- Buttons -->
+            <div class="buttons">
+                <input type="submit" value="Google Search" class="search-button">
+                <input type="button" value="I'm Feeling Lucky" class="search-button">
+            </div>
+        </form>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-left">
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div class="footer-right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>
